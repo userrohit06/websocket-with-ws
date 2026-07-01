@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebSocket Chat</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>WebSocket Chat</h1>
+
+    <!-- Join Screen -->
+    <div id="joinContainer">
+      <h2>Enter username</h2>
+
+      <input type="text" id="usernameInput" placeholder="Enter username" />
+
+      <button id="joinBtn">Join Chat</button>
+    </div>
+
+    <!-- Chat Screen -->
+    <div id="chatContainer" style="display: none">
+      <h3>Rooms</h3>
+
+      <input id="roomInput" placeholder="Room Name" />
+
+      <button id="createRoomBtn">Create Room</button>
+
+      <ul id="roomList"></ul>
+
+      <h4 id="selectedRoom">No Room Selected</h4>
+
+      <h3>Online Users</h3>
+      <ul id="onlineUsers"></ul>
+
+      <div id="messages"></div>
+
+      <div id="typingIndicator"></div>
+
+      <h3 id="selectedUserLabel">Talking To: Nobody</h3>
+
+      <input type="text" id="messageInput" placeholder="Type message..." />
+
+      <button id="sendBtn">Send</button>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
